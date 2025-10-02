@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juan Perez — Design</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h1 class="logo">JCD</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">About Me</a></li>
+        <li><a href="photography.html">Photography</a></li>
+        <li><a href="design.html" class="active">Design</a></li>
+        <li><a href="videography.html">Videography</a></li>
+        <li><a href="contact.html" class="btn btn--primary">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="footer">
+      <p>© <span id="year"></span> Juan Perez</p>
+      <div class="socials">
+        <a href="#">Fb</a>
+        <a href="#">Tw</a>
+        <a href="#">In</a>
+        <a href="#">Be</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Design Grid -->
+  <main class="portfolio">
+    <h1 class="page-title">Design</h1>
+    <div class="grid">
+
+      <div class="card">
+        <img src="assets/design1.jpg" alt="Automotive Poster">
+        <div class="overlay">
+          <h3>Automotive Poster</h3>
+          <span>Graphic Design</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="assets/design2.jpg" alt="Magazine Editorial">
+        <div class="overlay">
+          <h3>Magazine Editorial</h3>
+          <span>Editorial Design</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="assets/design3.jpg" alt="Brand Logo">
+        <div class="overlay">
+          <h3>Brand Logo</h3>
+          <span>Branding</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="assets/design4.jpg" alt="Packaging Mockup">
+        <div class="overlay">
+          <h3>Packaging Mockup</h3>
+          <span>Product Design</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="assets/design5.jpg" alt="Event Flyer">
+        <div class="overlay">
+          <h3>Event Flyer</h3>
+          <span>Print</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="assets/design6.jpg" alt="Social Media Campaign">
+        <div class="overlay">
+          <h3>Social Media Campaign</h3>
+          <span>Digital</span>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
