@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juan Perez — Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h1 class="logo">JCD</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">About Me</a></li>
+        <li><a href="photography.html">Photography</a></li>
+        <li><a href="design.html">Design</a></li>
+        <li><a href="videography.html">Videography</a></li>
+        <li><a href="contact.html" class="btn btn--primary">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="footer">
+      <p>© <span id="year"></span> Juan Perez</p>
+      <div class="socials">
+
+      </div>
+    </div>
+  </aside>
+
+  <!-- Hero Section -->
+  <main class="hero">
+    <div class="hero__media">
+      <!-- Main Hero Image -->
+      <img src="assets/work1.mp4" alt="Main Showcase" class="hero-main">
+
+      <!-- Thumbnails -->
+      <img src="assets/work2.jpg" alt="Example 1" class="thumb thumb1">
+      <img src="assets/work3.jpg" alt="Example 2" class="thumb thumb2">
+      <img src="assets/work4.jpg" alt="Example 3" class="thumb thumb3">
+      <img src="assets/work5.jpg" alt="Example 4" class="thumb thumb4">
+    </div>
+
+    <div class="hero__text">
+      <h1><span class="accent">J P</span><br>Multi-media designer</h1>
+      <p>Juan blends photography, design, and videography to craft bold visuals and compelling stories. My work spans from editorial layouts and branding projects to cinematic video content, always focused on bringing ideas to life in ways that connect with people and elevate brands.</p>
+      <div class="hero__cta">
+        <a href="photography.html" class="btn btn--primary">View Work</a>
+        <a href="contact.html" class="btn btn--ghost">Hire Me</a>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
