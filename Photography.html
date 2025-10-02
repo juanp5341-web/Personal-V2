@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juan Perez — Photography</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h1 class="logo">JCD</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">About Me</a></li>
+        <li><a href="photography.html" class="active">Photography</a></li>
+        <li><a href="design.html">Design</a></li>
+        <li><a href="videography.html">Videography</a></li>
+        <li><a href="contact.html" class="btn btn--primary">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="footer">
+      <p>© <span id="year"></span> Juan Perez</p>
+      <div class="socials">
+        <a href="#">Fb</a>
+        <a href="#">Tw</a>
+        <a href="#">In</a>
+        <a href="#">Be</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Photography Grid -->
+  <main class="portfolio">
+    <h1 class="page-title">Photography</h1>
+    <div class="grid">
+
+      <div class="card">
+        <img src="assets/photo1.jpg" alt="Studio Portrait">
+        <div class="overlay">
+          <h3>Studio Portrait</h3>
+          <span>Portrait</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="assets/photo2.jpg" alt="Outdoor Shoot">
+        <div class="overlay">
+          <h3>Outdoor Shoot</h3>
+          <span>Editorial</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="assets/photo3.jpg" alt="Event Coverage">
+        <div class="overlay">
+          <h3>Event Coverage</h3>
+          <span>Events</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="assets/photo4.jpg" alt="Street Photography">
+        <div class="overlay">
+          <h3>Street Photography</h3>
+          <span>Urban</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="assets/photo5.jpg" alt="Fashion Editorial">
+        <div class="overlay">
+          <h3>Fashion Editorial</h3>
+          <span>Fashion</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="assets/photo6.jpg" alt="Black & White">
+        <div class="overlay">
+          <h3>Black & White</h3>
+          <span>Fine Art</span>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
