@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juan Perez — Videography</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h1 class="logo">JCD</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">About Me</a></li>
+        <li><a href="photography.html">Photography</a></li>
+        <li><a href="design.html">Design</a></li>
+        <li><a href="videography.html" class="active">Videography</a></li>
+        <li><a href="contact.html" class="btn btn--primary">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="footer">
+      <p>© <span id="year"></span> Juan Perez</p>
+      <div class="socials">
+        <a href="#">Fb</a>
+        <a href="#">Tw</a>
+        <a href="#">In</a>
+        <a href="#">Be</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Videography Grid -->
+  <main class="portfolio">
+    <h1 class="page-title">Videography</h1>
+    <div class="grid">
+
+      <div class="card">
+        <video controls muted>
+          <source src="assets/video1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="overlay">
+          <h3>Promo Ad</h3>
+          <span>Commercial</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <video controls muted>
+          <source src="assets/video2.mp4" type="video/mp4">
+        </video>
+        <div class="overlay">
+          <h3>Music Video</h3>
+          <span>Entertainment</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <video controls muted>
+          <source src="assets/video3.mp4" type="video/mp4">
+        </video>
+        <div class="overlay">
+          <h3>Fashion Film</h3>
+          <span>Editorial</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <video controls muted>
+          <source src="assets/video4.mp4" type="video/mp4">
+        </video>
+        <div class="overlay">
+          <h3>Event Recap</h3>
+          <span>Events</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <video controls muted>
+          <source src="assets/video5.mp4" type="video/mp4">
+        </video>
+        <div class="overlay">
+          <h3>Documentary Clip</h3>
+          <span>Storytelling</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <video controls muted>
+          <source src="assets/video6.mp4" type="video/mp4">
+        </video>
+        <div class="overlay">
+          <h3>Social Media Reel</h3>
+          <span>Digital</span>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
